@@ -6,17 +6,15 @@ Node module to perform DFS on a Graph and return available paths
 ```Javascript
 var DFS = require('dfs');
 
+//create new DFS graph
 var dfs = new DFS();
 
 // or optionally pass map of edges
 var dfs = new DFS(['A','B']);
 
+//add edges to the graph
+dfs.addEdge(from,to) 
 
-//Add element to chain  (if "word")
-markov.addToChain("audrey");
-markov.addToChain("markov");
-// or "sentence"
-markov.addToChain("The cat sat on the mat.");
 
-// or add array of element ("word")
-markov.addArrayToChain(["hello","audrey","markov"]);
+//return paths available betweem two nodes.
+dfs.search(from, to)
