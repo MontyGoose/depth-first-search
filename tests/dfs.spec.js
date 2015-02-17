@@ -13,7 +13,7 @@ describe('Create DFS Graph', function() {
     dfs.addEdge("a","d");    
     
     
-    dfs.search("a","b");
+    dfs.search("a","d");
     expect(dfs).to.be.an('object');
 });
 
