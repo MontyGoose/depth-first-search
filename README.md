@@ -10,11 +10,14 @@ var DFS = require('dfs');
 var dfs = new DFS();
 
 // or optionally pass map of edges
-var dfs = new DFS(['A','B']);
+var dfs = new DFS(['A','B']);  //TODO
 
 //add edges to the graph
-dfs.addEdge(from,to) 
+dfs.addEdge(from,to); 
 
 
-//return paths available betweem two nodes.
-dfs.search(from, to)
+//return all paths (as CSV) available between two nodes.
+dfs.search(from, to);
+
+## Further details
+Check out the tests for more examples.
